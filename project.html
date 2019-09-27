@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>My Weather Application</title>
+    <link rel="stylesheet" href="project.css">
+    <script language="javascript" src="project.js"></script>
+</head>
+
+<body onload="search()">
+    <div class="container">
+        <div class="location">
+            <input type="text" id="city" value="Esch-Sur-Alzette" placeholder="Enter your city">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="temperature" id="temperature">-- &deg;C</div>
+        <img id="icon" src="" width=100 height=100>
+        <div class="others">
+            <table>
+                <tr>
+                    <td>Pressure:</td>
+                    <td><span id="pressure">--</span> kPa</td>
+                </tr>
+                <tr>
+                    <td>Humidity:</td>
+                    <td><span id="humidity">--</span> %</td>
+                </tr>
+                <tr>
+                    <td>Wind:</td>
+                    <td>
+                        <span id="wind-direction">--</span> &deg;<br>
+                        <span id="wind-speed">--</span> km/h
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
