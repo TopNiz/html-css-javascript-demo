@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <title>My first HTML page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="adidas_logo.png" sizes="32x32">
+</head>
+
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="active">
+                <a href="C1-HTML.html">HTML Structure</a>
+            </li>
+            <li>
+                <a>Handling content</a>
+                <ul>
+                    <li>
+                        <a href="C2-Text.html">Formatting Text</a>
+                    </li>
+                    <li style="font-weight: bold;">
+                        <a href="C3-Images.html">Inserting Images</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="C4-Tables.html">Handling Tables</a>
+            </li>
+            <li>
+                <a href="C5-Lists.html">Adding Lists</a>
+            </li>
+        </ul>
+    </div>
+    Adding Lists<br>
+    Hello World! <br>
+    My name is Nizar. <br>
+    This is a 4-spaces indent = C&nbsp;&nbsp;&nbsp;&nbspC <br>
+    &lt;nizar&gt;<br>
+    Voici la pr&eacute;sentation d'un h&ocirc;tel...<br>
+
+    Regular "Times new roman" font : <br>
+    This sentence is <strong>bold</strong>. <br>
+    This sentence is <i>italic</i>. <br>
+    This sentence is <u>underlined</u>. <br>
+    This sentence is <b><i>italic</i> bold</b>. <br>
+
+    The same thing with Arial font : <br>
+    <font face="Arial" size="5" color="red">
+        This sentence is <strong>bold</strong>. <br>
+        This sentence is <i>italic</i>. <br>
+        This sentence is <u>underlined</u>. <br>
+        This sentence is <b><i>italic</i> bold</b>. <br>
+    </font>
+
+    <article>
+        <h1>Main title</h1>
+        <section>
+            Table of content <br>
+            <ol>
+                <li>
+                    <a href="#chapter1">Chapter 1</a>
+                    <ol>
+                        <li>
+                            <a href="#section1-1">Section 1.1</a>
+                            <ol>
+                                <li><a href="#section1-1-1">Subsection 1.1.1</a></li>
+                                <li><a href="#section1-1-2">Subsection 1.1.2</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#section1-2">Section 1.2</a>
+                            <ol>
+                                <li><a href="#section1-2-1">Subsection 1.2.1</a></li>
+                                <li><a href="#section1-2-2">Subsection 1.2.2</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#chapter2">Chapter 2</a>
+                    <ol>
+                        <li>
+                            <a href="#section2-1">Section 2.1</a>
+                            <ol>
+                                <li><a href="#section2-1-1">Subsection 2.1.1</a></li>
+                                <li><a href="#section2-1-2">Subsection 2.1.2</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#section2-2">Section 2.2</a>
+                            <ol>
+                                <li><a href="#section2-2-1">Subsection 2.2.1</a></li>
+                                <li><a href="#section2-2-2">Subsection 2.2.2</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+
+        </section>
+        <section id="chapter1" name="chapter1">
+            <h2><a id="chapter1"></a>Inserting images</h2>
+            <section id="chap1section1">
+                <h3><a id="section1-1"></a>Basic insertion</h3>
+                Here is a sample image :<br>
+                <img src="adidas_logo.png">
+                <section>
+                    <h4><a id="section1-1-1"></a>Modifying image size</h4>
+                    Using size in pixels: <br>
+                    <img src="adidas_logo.png" width="70" height="100">
+                </section>
+                <section>
+                    <h4><a id="section1-1-2"></a>Proportional sizing</h4>
+                    Sizing proportionnally to the height: <br>
+                    <img src="adidas_logo.png" height="100"> <br>
+                    Sizing proportionnally to the width: <br>
+                    <img src="adidas_logo.png" width="100">
+                </section>
+                <section>
+                    <h4><a id="section1-1-3"></a>Percent sizing</h4>
+                    Image as wide as 80% the hosting window:
+                    <img src="adidas_logo.png" width="80%">
+                </section>
+            </section>
+            <section>
+                <h3><a id="section1-2"></a>Content and text alignment</h3>
+                <section>
+                    <h4><a id="section1-2-1"></a>Left is the default</h4>
+                    Here is a default alignment for text : <br>
+                    It is left aligned.
+                    <h4><a id="section1-2-2"></a>Right alignment</h4>
+                    <img src="adidas_logo.png" width="50%" align="right">
+                    <p align="right">
+                        This paragraph is aligned to the right.
+                    </p>
+                    <h4><a id="section1-2-3"></a>Center alignment</h4>
+                    <p align="center">
+                        <img src="adidas_logo.png" width="50%"><br>
+                        This paragraph is aligned to the center.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2><a id="chapter2"></a>Tables</h2>
+            <section id="chap2section1">
+                <h3><a id="section2-1"></a>Simple Table</h3>
+                <table border=1>
+                    <col width="150">
+                    <col width="100">
+                    <col width="200">
+                    <tr>
+                        <td> DATA 1,1 </td>
+                        <td> DATA 1,2 </td>
+                        <td> DATA 1,3 </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 2,1 </td>
+                        <td> DATA 2,2 DATA 2,2 DATA 2,2 DATA 2,2 </td>
+                        <td> DATA 2,3 </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="yellow"> DATA 3,1 </td>
+                        <td> <b>DATA 3,2</b> </td>
+                        <td> DATA 3,3 </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 4,1 </td>
+                        <td> DATA 4,2 </td>
+                        <td> DATA 4,3 </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h4><a id="section2-2"></a>Merged cells in table</h4>
+                <table border=1>
+                    <col width="150">
+                    <col width="100">
+                    <col width="200">
+                    <tr>
+                        <td colspan="3" align="center">
+                            <font size=5>Table header</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            Group 1
+                        </td>
+                        <td>
+                            Group 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Group 1
+                        </td>
+                        <td colspan="2" align="center">
+                            Group 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 1,1 </td>
+                        <td> DATA 1,2 </td>
+                        <td> DATA 1,3 </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 2,1 </td>
+                        <td> DATA 2,2 DATA 2,2 DATA 2,2 DATA 2,2 </td>
+                        <td> DATA 2,3 </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="yellow"> DATA 3,1 </td>
+                        <td> <b>DATA 3,2</b> </td>
+                        <td> DATA 3,3 </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 4,1 </td>
+                        <td> DATA 4,2 </td>
+                        <td> DATA 4,3 </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h4><a id="section2-3"></a>Merged vertical cells</h4>
+                <table border=1>
+                    <col width="150">
+                    <col width="100">
+                    <col width="200">
+                    <tr>
+                        <td colspan="3" align="center">
+                            <font size=5>Table header</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            Group 1
+                        </td>
+                        <td>
+                            Group 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Group 1
+                        </td>
+                        <td colspan="2" align="center">
+                            Group 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 1,1 </td>
+                        <td> DATA 1,2 </td>
+                        <td> DATA 1,3 </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 2,1 </td>
+                        <td> DATA 2,2 DATA 2,2 DATA 2,2 DATA 2,2 </td>
+                        <td> DATA 2,3 </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="yellow"> DATA 3,1 </td>
+                        <td> <b>DATA 3,2</b> </td>
+                        <td> DATA 3,3 </td>
+                    </tr>
+                    <tr>
+                        <td> DATA 4,1 </td>
+                        <td> DATA 4,2 </td>
+                        <td> DATA 4,3 </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h4><a id="section2-1-2"></a>Section 1.2</h4>
+                Some new regular text for the new section.
+            </section>
+        </section>
+        <section>
+            <h3><a id="section2-2"></a>Section 2</h3>
+            <section>
+                <h4><a id="section2-2-1"></a>Sub section 2.1</h4>
+                <h4><a id="section2-2-2"></a>Sub section 2.2</h4>
+            </section>
+        </section>
+        </section>
+    </article>
+
+</body>
+
+</html>
