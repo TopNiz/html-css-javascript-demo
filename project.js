@@ -26,16 +26,19 @@ function send_request(url, cb) {
 
 function get_weather (data) {
     console.log(data)
-    document.getElementById("temperature").innerHTML = data.main.temp + "&deg;C"
+    document.getElementById("temperature").innerHTML = data.main.temp
     document.getElementById("pressure").innerHTML = data.main.pressure
     document.getElementById("humidity").innerHTML = data.main.humidity
     document.getElementById("wind-direction").innerHTML = data.wind.deg
     document.getElementById("wind-speed").innerHTML = data.wind.speed
+
+    document.getElementById("description").innerHTML = data.weather[0].main +  " - " + data.weather[0].description
 
     var icon_code = data.weather[0].icon
     var icon_url = icon_base_url + icon_code + icon_suffix
 
     document.getElementById("icon").src = icon_url
 
-    document.getElementsByClassName("container")[0].style.backgroundImage = "url('weather" + icon_code + ".jpg')";
+    document.getElementsByClassName("container")[0].style.backgroundImage = 
+    "url('weather" + icon_code + ".jpg')";
 }
