@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="./index.html">Introduction</a>
+        </li>
+        <li>
+          <a href="./images.html">Images</a>
+        </li>
+        <li>
+          <a href="./tables.html">Tables</a>
+        </li>
+        <li class="active-page">
+          <a href="./javascript.html">Javascript</a>
+        </li>
+        <li>
+          <a href="./project.html">Project</a>
+        </li>
+        <li>
+          <a href="./cheat-sheet.html">Cheat Sheet</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>Javascript</h1>
+        <p>
+          It is the official programming language to make HTML files, dynamic
+          and interactive.
+        </p>
+      </header>
+      <section id="exercise-1">
+        <h2>Displaying a list of words</h2>
+        <p>
+          The goal of this exercise is to display an ordered list of words. The
+          list is, for example, the days of the week: "Monday", "Tuesday",
+          "Wednesday", "Thursday", "Friday", "Saturday" and "Sunday". The list
+          will be shown after this paragraph.
+        </p>
+        <p>
+          To display the weekdays' list, please
+          <button id="show">Click to show</button>
+          <button id="hide">Click to hide</button>
+        </p>
+        <p>The list is added before this paragraph.</p>
+      </section>
+      <section>
+        <h2>BMI Calculator</h2>
+        <div class="form">
+          <div class="weight">
+            <label for="weight">Weight:</label>
+            <input
+              type="number"
+              id="weight"
+              step="0.1"
+              max="200"
+              min="0"
+              value="82"
+            />
+          </div>
+          <div class="height">
+            <label for="height">Height (cm):</label>
+            <input
+              type="number"
+              id="height"
+              step="1"
+              max="280"
+              min="0"
+              value="184"
+            />
+          </div>
+          <button id="submit" type="button" onclick="computeBMI()">
+            Compute BMI
+          </button>
+        </div>
+        <div class="result">-- °C</div>
+      </section>
+    </main>
+  </body>
+</html>
+

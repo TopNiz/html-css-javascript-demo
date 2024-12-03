@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="./index.html">Introduction</a>
+            </li>
+            <li>
+                <a href="./images.html">Images</a>
+            </li>
+            <li>
+                <a href="./tables.html">Tables</a>
+            </li>
+            <li>
+                <a href="./javascript.html">Javascript</a>
+            </li>
+            <li>
+                <a href="./project.html">Project</a>
+            </li>
+            <li class="active-page">
+                <a href="./cheat-sheet.html">Cheat Sheet</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>HTML/CSS &amp; Javascript Cheat Sheet</h1>
+            <p>
+                This a course cheat sheet for HTML/CSS and Javascript.
+            </p>
+        </header>
+        <section>
+            <details>
+                <summary>
+                    <h2>HTML</h2>
+                </summary>
+                <ul>
+                    <li>
+                        HTML is based on tags. We put the tag name inside &lt; and &gt;.
+                        To close the tag, we preceed the name with "/" and put it inside
+                        &lt; and &gt;.
+                    </li>
+                    <li>
+                        Consecutive white spaces in HTML file are reduced into one unique space
+                        when it is displayed by the browser.
+                    </li>
+                    <li>
+                        For non-breakable white spaces, we use the HTML symbol: <code>&amp;nbsp;</code>.
+                    </li>
+                    <li>
+                        &lt;html&gt;: The root tag
+                    </li>
+                    <li>
+                        &lt;head&gt;: Dealing with the browser.
+                    </li>
+                    <li>
+                        &lt;body&gt;: Visible content to the user
+                    </li>
+                    <li>
+                        &lt;main&gt;: Main section of the document
+                    </li>
+                    <li>
+                        &lt;header&gt;: All required header information for the web page, displayed to the user.
+                    </li>
+                    <li>
+                        &lt;article&gt;: Encapsulates an article (product, magazine post, ...)
+                    </li>
+                    <li>
+                        &lt;section&gt;: section tag
+                    </li>
+                    <li>
+                        &lt;p&gt;: paragraph
+                    </li>
+                    <li>
+                        &lt;h1&gt;: Main heading of the web page. It is not valid to put more than one H1 tag, but it is
+                        possible.
+                    </li>
+                    <li>
+                        &lt;h2&gt;, &lt;h3&gt;, ..., &lt;h6&gt;: Subheadings' levels
+                    </li>
+                    <li>
+                        &lt;ol&gt;: Ordered list (numbered)
+                    </li>
+                    <li>
+                        &lt;ul&gt;: Unordered list (bulleted)
+                    </li>
+                    <li>
+                        &lt;li&gt;: List items
+                    </li>
+                    <li>
+                        &lt;br&gt;: BReak line, to split a paragraph.
+                    </li>
+                    <li>
+                        &lt;img&gt;: Insert an image, with "src" attribute for the location of the image.
+                    </li>
+                    <li>
+                        &lt;a&gt;: Anchor to create a link. "href" is the attribute to reference the link
+                        (Hyper-REFerence).
+                    </li>
+                    <li>
+                        &lt;table&gt;: To create a table.
+                    </li>
+                    <li>
+                        &lt;thead&gt;: Table header
+                    </li>
+                    <li>
+                        &lt;tbody&gt;: Table body
+                    </li>
+                    <li>
+                        &lt;tfoot&gt;: Table footer
+                    </li>
+                    <li>
+                        &lt;caption&gt;: Table caption (legend)
+                    </li>
+                    <li>
+                        &lt;tr&gt;: Table row
+                    </li>
+                    <li>
+                        &lt;th&gt;: Heading cell (using for column headings or line headings)
+                    </li>
+                    <li>
+                        &lt;td&gt;: Table cell or more precisely Table Data.
+                    </li>
+                    <li>
+                        &lt;strong&gt;: To display a "strong" idea (in bold)
+                    </li>
+                    <li>
+                        &lt;em&gt;: To emphasize a text (italic)
+                    </li>
+                    <li>
+                        &lt;u&gt;: Underline text
+                    </li>
+                    <li>
+                        &lt;b&gt;: Bold the text
+                    </li>
+                    <li>
+                        &lt;i&gt;: Italicize the text
+                    </li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary>
+                    <h2>CSS</h2>
+                </summary>
+                <ul>
+                    <li>CSS stands for Cascading StyleSheet</li>
+                    <li>
+                        Syntax:
+                        <pre>
+selector {
+    attribute: value;
+    ...
+}</pre>
+                    </li>
+                    <li>
+                        The different types of selectors:
+                        <ul>
+                            <li>Tags: example <code>body</code></li>
+                            <li>Classes: They are prefixed by a dot. Example, <code>.my-class</code>.</li>
+                            <li>Identifiers: They are prefixed by hashtag example <code>#my-id</code>.</li>
+                            <li>Pseudo-elements</li>
+                            <li>Pseudo-classes</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Selectors can be combined:
+                        <ul>
+                            <li>
+                                By a "space": example <code>nav li</code>. It means any the
+                                <code>&lt;li&gt;</code> elements that are inside any
+                                <code>&lt;nav&gt;</code> of the HTML.
+                            </li>
+                            <li>By ">": Refencing direct children.</li>
+                            <li>By "~": Referencing siblings</li>
+                            <li>By "+": Referencing the exact next sibling</li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>
+                        Some attributes:
+                        <ul>
+                            <li>background-color</li>
+                            <li>color: to color the text</li>
+                            <li>font-family</li>
+                            <li>display</li>
+                            <li>font-weight</li>
+                            <li>text-align</li>
+                            <li>padding</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Be careful: <code>padding</code> attribute is not applicable to inline
+                        elements. It may be necessary to change the display of the inline element
+                        into an "inline-block" or "block"
+                    </li>
+                    <li>
+                        There are many other exceptions and "weird" behaviors in CSS. The only way to overcome them
+                        is to search the Internet.
+                    </li>
+                </ul>
+            </details>
+        </section>
+    </main>
+</body>
+
+</html>

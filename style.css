@@ -1,48 +1,125 @@
+/*
+CSS stands for Cascading Style Sheet. It is cascading because child elements 
+inherit style specifications from the parent elements.
+
+The syntax of CSS is the following:
+selector {
+    style-attribute: value(s);
+}
+
+There several types of selectors:
+- Tags
+- Classes : preceeded by a dot like ".main-header"
+- Identifiers : preceeded by a hashtag like "#abstract"
+- Pseudo-elements
+- Pseudo-classes
+- Combinators
+
+Examples:
+.main-header {
+    background-color: lightgrey;
+}
+
+#abstract {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*/
 body {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: lightgray;
+    margin: 0;
 }
 
-.navigation ul {
-	list-style: none;
-	background-color: #183b75;
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
+pre,
+code {
+    background-color: #e0e0e0;
+    padding: 0.25rem;
 }
 
-.navigation li {
-    display: block;
-	float: left;
-	border-left: solid 1px rgba(255, 255, 255, 0.1);
-	font-weight: bold;
-	color: white;
+summary h2 {
+    display: inline-block;
 }
 
-.navigation li a, li ul li a {
-	text-decoration: none;
-	color: white;
-	display: block;
-	padding: 10px 20px;
+main {
+    background-color: white;
+    width: 48rem;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1rem;
 }
 
-.navigation li:hover {
-	background-color: #ff8000;
+.main-menu {
+    background-color: darkblue;
 }
 
-.navigation li:hover ul {
-	display: block;
-	position: absolute;
-	/*top: 46px;*/
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+    width: 48rem;
+    list-style: none;
 }
 
-.navigation li:hover ul li {
-	float: none;
+.main-menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    border-right: 1px solid #ffffff20;
 }
 
-.navigation ul ul {
-    display: none;
+.main-menu li:last-child a {
+    border-right: none;
 }
 
-.navigation .active {
-	background-color: rgba(255, 255, 255, 0.1);
+.active-page a,
+.main-menu a:hover {
+    background-color: orange;
+    color: darkblue;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+
+thead,
+tfoot {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+thead {
+    background-color: darkseagreen;
+}
+
+tfoot {
+    background-color: cornsilk;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: aliceblue;
+}
+
+th,
+td {
+    border: 1px solid;
+    padding: 0.3rem;
+}
+
+td {
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+}
+
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    color: gray;
+    margin-top: 0.5rem;
 }

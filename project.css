@@ -1,37 +1,33 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
 .container {
-    margin: auto;
-    width: 380px;
-    height: 380px;
-    background-image: url("weather.jpg");
-    border-radius: 20px;
-    padding: 10px;
+  margin: auto;
+  width: 380px;
+  height: 380px;
+  background-image: url('weather.jpg');
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .location {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .temperature {
-    font-size: 52px;
-    font-weight: bold;
-    color: white;
+  font-size: 52px;
+  font-weight: bold;
+  color: white;
 }
 
 #description {
-    color: white;
+  color: white;
 }
 
 table {
-    border-collapse: collapse;
-    margin: auto;
-    background-color: white;
+  border-collapse: collapse;
+  margin: auto;
+  background-color: white;
 }
 
 td {
-    border: solid 1px;
+  border: solid 1px;
 }
+
