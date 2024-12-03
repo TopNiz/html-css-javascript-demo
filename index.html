@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="main-menu">
+      <ul>
+        <li class="active-page">
+          <a href="./index.html">Introduction</a>
+        </li>
+        <li>
+          <a href="./images.html">Images</a>
+        </li>
+        <li>
+          <a href="./tables.html">Tables</a>
+        </li>
+        <li>
+          <a href="./javascript.html">Javascript</a>
+        </li>
+        <li>
+          <a href="./project.html">Project</a>
+        </li>
+        <li>
+          <a href="./cheat-sheet.html">Cheat Sheet</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Introduction to HTML</h1>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#authors">Authors</a></li>
+            <li>
+              <a href="#basics">Basic HTML structure</a>
+              <ul>
+                <li><a href="#basic-tags">Basic tags</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#emphasizing">Emphasizing tags</a></li>
+                <li><a href="#links">Links and anchors</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="abstract" class="main-header">
+          <h2>Abstract</h2>
+          <p>
+            HTML stands for HyperText Markup Language.
+            <br />
+            The "hypertext" feature is the links embedded in the text to access
+            additional information about that text.
+            <br />
+            HTML is used to structure any text semantically speaking.
+            <br />
+            Bare HTML files, or non styled HTML, is presented by browsers with
+            "default" styling. This default styling is called "User-Agent
+            style".
+          </p>
+        </section>
+        <section id="authors" class="main-header">
+          <h2>Authors</h2>
+          <ul>
+            <li>Students at the DLH</li>
+          </ul>
+        </section>
+      </header>
+      <section id="basics">
+        <h2>Basic HTML structure</h2>
+        <p>
+          The HTML is based on "tags". Each tag starts with "&lt;" (open angled
+          bracket) and ends with "&gt;" (closing angled ). Most of HTML tags
+          have "closing tags" . The only difference is that the "tag name" is
+          preceeded by "/" (a slash). <br />
+          The angled brackets ("&lt;") are not allowed in the regular text. They
+          are limited to the tags only, in HTML. So how to display angled
+          brackets in a web page ?
+          <br />
+          We use "HTML" symbols. An HTML symbol start with "&amp;", ends with a
+          ";" and it has an acronym. For example, the opening angled bracket has
+          the acronym "lt" (Less Than). The HTML symbol for it is : &amp;lt;
+        </p>
+
+        <section id="basic-tags">
+          <h3>Basic tags</h3>
+          <p>Here follow the description of the different basic tags.</p>
+          <section>
+            <h4>&lt;html&gt;</h4>
+            <p>
+              This is the root tag for any HTML file. Any HTML content should be
+              surrounded by that tag.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;head&gt;</h4>
+            <p>
+              The head tag contains the "technical" information about the HTML
+              file. It is meant to be understood by the browser or any automatic
+              system. And it is invisible the reader.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;body&gt;</h4>
+            <p>
+              This is the main content shown to the reader. Everything that
+              should be displayed to the reader should be described there.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;title&gt;</h4>
+            <p>
+              It is put inside the &lt;head&gt;. And it is the title of the web
+              page displayed at the tab level of the browser.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;div&gt;</h4>
+            <p>
+              It is just a division of the text that have no "semantic" focus or
+              function.
+            </p>
+          </section>
+          <section>
+            <h4>Headings - &lt;h1&gt;, &lt;h2&gt;, ...&lt;h6&gt;</h4>
+            <p>
+              They are the section headings. The numbers are not the heading
+              order but they mean the heading level.
+              <br />
+              In a web page, there is only one &lt;h1&gt;. It is the main title
+              of the document. And in a document, we can not have several main
+              titles. Otherwise, it is incorrect semantically.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;section&gt;</h4>
+            <p>
+              The section is a block of paragraphs and sub-sections with a
+              dedicated topic.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;p&gt;</h4>
+            <p>
+              It separates the text into paragraphs. It is also a group of
+              sentences dealing and describing the same context.
+            </p>
+          </section>
+          <section>
+            <h4>&lt;br&gt;</h4>
+            <p>
+              "br" stands for "line BReak". It adds a line break to the text
+              without jumping paragraphs.
+            </p>
+          </section>
+        </section>
+
+        <section id="lists">
+          <h3>Lists</h3>
+          <p>
+            Lists, or outline, can be: ordered (numbered) or unordered
+            (bulleted)
+          </p>
+          <section>
+            <h4>Ordered lists</h4>
+            <p>&lt;ol&gt; is used for Ordered Lists.</p>
+          </section>
+          <section>
+            <h4>Unordered lists</h4>
+            <p>&lt;ul&gt; is used for Unordered Lists.</p>
+          </section>
+          <section>
+            <h4>List items</h4>
+            <p>
+              They are surrounded by the tag &lt;li&gt;. It stand for List Item.
+            </p>
+          </section>
+          <section>
+            <h4>Examples</h4>
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ol>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+            <p>And here is an example of nested lists:</p>
+            <ol>
+              <li>Item 1</li>
+              <li>
+                Item 2 - with a sublist:
+                <ol>
+                  <li>Sub-item 1</li>
+                  <li>Sub-item 2</li>
+                  <li>
+                    Nested unnumbered list:
+                    <ul>
+                      <li>Nested item 1</li>
+                      <li>Nested item 2</li>
+                      <li>Nested item 3</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>Item 3</li>
+            </ol>
+          </section>
+        </section>
+
+        <section id="emphasizing">
+          <h3>Emphasizing tags</h3>
+          <p>
+            Sometimes, we need to emphasize our text. And there are two ways to
+            do it: semantically or not semantically.
+          </p>
+
+          <ol>
+            <li>
+              <h4>Semantically</h4>
+              <p>There are 2 tags for that:</p>
+
+              <ol>
+                <li>
+                  &lt;strong&gt; meaning that the text represents a
+                  <strong>strong idea</strong>,
+                </li>
+                <li>
+                  and &lt;em&gt; to emphasize the text and
+                  <em>highlight it</em>.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <h4>Not semantically</h4>
+              <p>There are 3 tags for that:</p>
+              <ol>
+                <li>&lt;b&gt; to <b>bold the text</b>, &lt;i&gt;</li>
+                <li>to <i>italicize the text</i> and &lt;u&gt;</li>
+                <li>to <u>underline the text</u>.</li>
+              </ol>
+            </li>
+          </ol>
+        </section>
+        <section id="links">
+          <h3>Links and anchors</h3>
+          <p>
+            The HyperText feature of HTML is based on links. That's what brings
+            additional dimensions to the text.
+          </p>
+          <p>
+            The main tag is &lt;a&gt; for "Anchor". It can be used to make
+            internal links inside the same page. And also, it is used to make
+            external links to other web pages. And to reference the link, we use
+            a dedicated attribute called "href". Example:
+          </p>
+          <ol>
+            <li>
+              <h4>External links</h4>
+              <p>
+                The referenced link or page is located outside the current web
+                page.
+              </p>
+              <p>
+                <a href="https://google.com"
+                  ><strong>Link</strong> to google search page</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>Internal links</h4>
+              <p>
+                The referenced link or page is located inside the current web
+                page. The reference is the ID of any HTML element in the page.
+              </p>
+              <p>
+                <a href="#abstract"
+                  ><strong>Link</strong> to google search page</a
+                >
+              </p>
+            </li>
+          </ol>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
+

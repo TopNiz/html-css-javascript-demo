@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images in HTML</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="./index.html">Introduction</a>
+        </li>
+        <li class="active-page">
+          <a href="./images.html">Images</a>
+        </li>
+        <li>
+          <a href="./tables.html">Tables</a>
+        </li>
+        <li>
+          <a href="./javascript.html">Javascript</a>
+        </li>
+        <li>
+          <a href="./project.html">Project</a>
+        </li>
+        <li>
+          <a href="./cheat-sheet.html">Cheat Sheet</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>Images in HTML</h1>
+        <section>
+          <h2>Abstract</h2>
+          <p>
+            Images are inline elements and made to display photos. For that we
+            use the tag &lt;img&gt;.
+          </p>
+          <p>
+            Like the anchors, it requires the source of the image which is the
+            address of the image, on the web or the local path to the image. The
+            source attribute is "src".
+          </p>
+        </section>
+      </header>
+      <section>
+        <h2>Online images</h2>
+        <p>
+          Images are inline elements. For example:
+          <br />
+          <img
+            src="https://img.freepik.com/photos-gratuite/au-coucher-du-soleil-plage-tropicale-mer-cocotier_74190-1075.jpg"
+          />
+        </p>
+        <p>
+          The image above is at the same line than the text before it. To avoid
+          that, we need to put the image alone in a dedicated paragaph.
+        </p>
+        <p>
+          <img
+            src="https://img.freepik.com/photos-gratuite/au-coucher-du-soleil-plage-tropicale-mer-cocotier_74190-1075.jpg"
+          />
+        </p>
+      </section>
+      <section>
+        <h2>Local images</h2>
+        <p>
+          Local images are referenced with local relative paths. For example:
+        </p>
+        <p>
+          <img src="./resources/1075.jpg" />
+        </p>
+      </section>
+      <section>
+        <h2>Sizing the image</h2>
+        <p>We use the following attributes to resize the image:</p>
+        <ol>
+          <li>
+            "width" in pixels or in percentage (the number should followed by %)
+          </li>
+          <li>
+            "height" in pixels or in percentage (the number should followed by
+            %)
+          </li>
+        </ol>
+        <p>
+          If no attribute is mentioned, then the image is displayed with its
+          original size.
+        </p>
+        <p>
+          If one attribute is mentioned, then the browser will keep the aspect
+          ratio.
+        </p>
+        <p>
+          <img src="./resources/1075.jpg" width="100%" />
+        </p>
+        <p>
+          If both attributes are mentioned, then the aspect ratio is not
+          respected and the image may be squeezed.
+        </p>
+        <p>
+          <img src="./resources/1075.jpg" width="500" height="100" />
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
