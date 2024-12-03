@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
-var api_key = 'YOUR_OPENWEATHERMAP_API_KEY'
+var api_key = '<replace-with-api-key>'
 var base_url = 'https://api.openweathermap.org/data/2.5/'
 var request = 'weather?'
 var units = 'metric'
